@@ -1,0 +1,46 @@
+﻿@model ChallengeModel
+
+<h2>CHALLENGE 3</h2>
+<br />
+<p>
+Checking the found coordinates on a map, you discover that it points at a remote location in the far north. <br />
+It's a mountainous region with deep forests. No signs of civilization. <br />
+You feel brave and intrigued and decide to pursue the challenge. <br />
+<br />
+There is a town within 25km of the mark, that has a train station, so you decide to book train tickets. <br />
+Disappointingly SJ's page seems to be down, and all that shows is a mess of html... <br />
+<br />
+Well, lets help them and fix it then.
+</p>
+
+<h4>THE TASK</h4>
+<p>
+The page is full of unclosed html tags, what a mess. <br />
+Find all the numbers that are in properly opened and closed tags, and sum the numbers together to get your answer. <br />
+</p>
+<br />
+<h4>EXAMPLE:</h4>
+<p>
+Consider the following input:
+</p>
+<div style="border-style: solid">
+<p>
+   &lta&gt3&lt/a&gt7&lt/a&gt2&lta&gt1&lt/a&gt3&lt/a&gt
+</p></div>
+<p>
+The numbers 3 and 1 are in properly opened/closed tags, sum them together and you get the answer 4.
+</p>
+<br />
+
+<h4>YOUR CHALLENGE INPUT:</h4>
+<a href="~/inputs/input3.txt" class="btn btn-outline-light" target="_blank">Get your input!</a>
+
+<br />
+<br />
+<h4>SUBMIT YOUR ANSWER:</h4>
+<form asp-action="C3">
+    
+    <input asp-for="Answer" type="text" placeholder="Answer"/>
+    <br />
+    <input type="submit" class="btn btn-outline-light" value="Submit!" />
+</form>

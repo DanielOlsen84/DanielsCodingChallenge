@@ -1,0 +1,43 @@
+﻿@model ChallengeModel
+
+<h2>CHALLENGE 4</h2>
+<br />
+<p>
+You manage to fix their page and SJ contacts you to show their appreciation for your effort. <br />
+As a way to say thank you, they decide to let you travel for free, forever. <br />
+<br />
+A few minutes later you recieve an email with your tickets. <br />
+You open it and see a random mess of symbols... <br />
+</p>
+
+<h4>THE TASK</h4>
+<p>
+Somewhere in the email there should be tickets for your trip. <br />
+Do a search for the word ticket and count how many times the word appears in the email.
+</p>
+<br />
+<h4>EXAMPLE:</h4>
+<p>
+Consider the following input:
+</p>
+<div style="border-style: solid">
+<p>
+nvh3190dticket91(a23,?ticket)tikets0
+</p></div>
+<p>
+In the above input, the word ticket appears twice, so the answer is 2.
+</p>
+<br />
+
+<h4>YOUR CHALLENGE INPUT:</h4>
+
+<a href="~/inputs/input4.txt" class="btn btn-outline-light" target="_blank">Get your input!</a>
+<br />
+<br />
+<h4>SUBMIT YOUR ANSWER:</h4>
+<form asp-action="C4">
+    
+    <input asp-for="Answer" type="text" placeholder="Answer"/>
+    <br />
+    <input type="submit" class="btn btn-outline-light" value="Submit!" />
+</form>

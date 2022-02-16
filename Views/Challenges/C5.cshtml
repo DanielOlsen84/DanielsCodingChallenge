@@ -1,0 +1,89 @@
+﻿@model ChallengeModel
+
+<h2>CHALLENGE 5</h2>
+<br />
+<p>
+You packed your toothbrush, laptop and favourite book. You are ready to leave for adventure. <br />
+Dang, you almost forgot about your beloved plants and flowers in the apartment... <br />
+<br />
+You quickly start to build a giant flower watering LEGO robot connected to a Raspberry PI and set up a local IoT-network. <br />
+Every plant and flower has a sensor attached to it's pot, that connects to the network updating the water level. <br />
+Cool! Lets program the robot.<br />
+</p>
+
+<h3>THE TASK</h3>
+<p>
+You have documented how much each plant drinks per day.<br />
+You do not want any pots water level to reach zero. But you also don't want to drown them. <br />
+So you fill each pot with a liter of water just before they reach zero. <br />
+You count that you may be away for 365 days, so you need to know how many times the robot need to fill a pot. <br />
+</p>
+<br />
+<h4>EXAMPLE:</h4>
+<p>
+Consider the following input, where the first number per row is how much a plant drinks per day, <br />
+and the second number how much water is currently in the pot:
+</p>
+<div style="border-style: solid">
+<p>
+10 100<br />
+25 100<br />
+45 100<br />
+</p></div>
+<p>
+The first plant drinks 10cl per day and the pot currently holds 100cl. <br />
+The second plant drinks 25cl/day and pot holds 100cl, and the third drinks 45cl/day and it's pot holds 100cl. <br />
+After the first day, the list would instead look like this:<br />
+</p>
+<div style="border-style: solid">
+<p>
+10 90<br />
+25 75<br />
+45 55<br />
+</p></div>
+<p>
+Since all plants will last one more day, no need to fill any pots. On day two:
+</p>
+<div style="border-style: solid">
+<p>
+10 80<br />
+25 50<br />
+45 10<br />
+</p></div>
+<p>
+This time plant nr 3 will not last another day, so you fill it, which adds 100 to a total of 110 for plant three. Day three:
+</p>
+<div style="border-style: solid">
+<p>
+10 70<br />
+25 25<br />
+45 65 (110 - 45)<br />
+</p></div>
+<p>
+Now plant two needs to be filled. Day four:
+</p>
+<div style="border-style: solid">
+<p>
+10 60<br />
+25 100 (125 - 25)<br />
+45 20<br />
+</p></div>
+<p>
+So after 4 days, the robot needed to fill 2 times. <br />
+After 365 days, the answer would be 291 times. <br />
+<br />
+You have 64 plants, how many times does the robot have to fill a pot after 365 days?
+</p>
+<br />
+
+<h4>YOUR CHALLENGE INPUT:</h4>
+<a href="~/inputs/input5.txt" class="btn btn-outline-light" target="_blank">Get your input!</a>
+<br />
+<br />
+<h4>SUBMIT YOUR ANSWER:</h4>
+<form asp-action="C5">
+    
+    <input asp-for="Answer" type="text" placeholder="Answer"/>
+    <br />
+    <input type="submit" class="btn btn-outline-light" value="Submit!" />
+</form>

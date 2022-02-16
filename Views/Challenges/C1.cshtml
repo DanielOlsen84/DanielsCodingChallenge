@@ -1,0 +1,54 @@
+﻿@model ChallengeModel
+
+<h2>CHALLENGE 1</h2>
+<br />
+<p>
+You just graduated after two years at ITHS! Yeeey! Congrats!! <br />
+It's time to change your Linked In status to "Open for work". <br />
+<br />
+Just hours later the first few messages starts to arrive at your inbox. <br />
+Head hunters, talent experts, startups, lots of interesting jobs...<br />
+But one message really catches your attention. It's rather cryptical and reads: <br />
+<i>Find us and reach the skies.</i> <br />
+And then there's a link, to a page with some cryptical writings and an input box with a submit button. <br />
+<br />
+
+<h4>THE TASK</h4>
+<p>
+You need to figure out what to write in the input box, based on the cryptical text on the webpage. <br />
+Maybe it will lead to...the skies?
+</p>
+<br />
+<h4>EXAMPLE:</h4>
+<p>
+The text appears to be numbers with the letters p or m inbetween them. <br />
+Similar to this:
+</p>
+<div style="border-style: solid"><p>
+   5p4m1m2p9
+</p></div>
+<p>
+Lets guess that p stands for plus and m for minus. <br />
+Then the message would read 5+4-1-2+9, and the answer to submit would be 15. <br />
+Lets try that!
+</p>
+<br />
+
+<h4>YOUR CHALLENGE INPUT:</h4>
+<a href="~/inputs/input1.txt" class="btn btn-outline-light" target="_blank">Get your input!</a>
+@*<button onclick=href="~/inputs/input1.txt" target="_blank" type="submit">Get your input!</button>*@
+
+@*<form action="~/inputs/input1.txt" target="_blank">
+    <input type="submit" value="Get your input!" />
+</form>*@
+
+
+<br />
+<br />
+<h4>SUBMIT YOUR ANSWER:</h4>
+<form asp-action="C1">
+    
+    <input asp-for="Answer" type="text" placeholder="Answer"/>
+    <br />
+    <input type="submit" class="btn btn-outline-light" value="Submit!" />
+</form>

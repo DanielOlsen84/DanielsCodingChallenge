@@ -1,0 +1,43 @@
+﻿@model ChallengeModel
+
+<h2>CHALLENGE 2</h2>
+<br />
+<p>
+You entered the correct number and a new page opens up in your browser. <br />
+The message on the page reads <i>Well done. Now find us.</i> <br/>
+Then there is a long line of what appears to be directions.
+<br />
+
+<h4>THE TASK</h4>
+<p>
+You are at coordinate [x=0, y=0]. <br />
+An instruction to go N1, would meen go north 1 step, which would bring you to coordinate [x=0, y=1]. <br />
+An instruction to go W1, would meen go west 1 step, which would bring you to coordinate [x=-1, y=1]. <br />
+When all instructions are done, calculate x+y and the result will be your answer.
+</p>
+<br />
+<h4>EXAMPLE:</h4>
+<p>
+Consider the following input:
+</p>
+<div style="border-style: solid"><p>
+   N1W1E2N2S5
+</p></div>
+<p>
+This would lead to coordinte [x=1, y=-2]. <br />
+Sum them together and the answer would be -1.
+</p>
+<br />
+
+<h4>YOUR CHALLENGE INPUT:</h4>
+
+<a href="~/inputs/input2.txt" class="btn btn-outline-light" target="_blank">Get your input!</a>
+<br />
+<br />
+<h4>SUBMIT YOUR ANSWER:</h4>
+<form asp-action="C2">
+    
+    <input asp-for="Answer" type="text" placeholder="Answer"/>
+    <br />
+    <input type="submit" class="btn btn-outline-light" value="Submit!" />
+</form>
